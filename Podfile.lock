@@ -5,7 +5,7 @@ PODS:
   - GSMessages (1.7.4)
   - KeychainAccess (3.2.1)
   - OpenSSL-Apple (1.1.1g.6)
-  - PMChallenge (0.0.2)
+  - PMChallenge (0.0.4)
   - ReachabilitySwift (5.0.0)
   - Sentry (4.5.0):
     - Sentry/Core (= 4.5.0)
@@ -76,7 +76,7 @@ SPEC CHECKSUMS:
   GSMessages: 9a82cc40465b88cd5d5759bee1fe812c3c63cc3a
   KeychainAccess: d5470352939ced6d6f7fb51cb2e67aae51fc294f
   OpenSSL-Apple: c9c1b9c5b2b1fc4e1758fc5f0836b58ae7fd8183
-  PMChallenge: e1545bb99e3b668f7b4af62aea193d11f1039d3b
+  PMChallenge: efd562984cf2c0db28e39c2d06e8336025a26633
   ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
   Sentry: ab6c209f23700d1460691dbc90e19ed0a05d496b
   SwiftLint: 4fa9579c63416865179bc416f0a92d55f009600d
@@ -87,4 +87,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: cd8a69fa78010a0c52e9c404f32813cc66ba214f
 
-COCOAPODS: 1.10.0
+COCOAPODS: 1.10.1
