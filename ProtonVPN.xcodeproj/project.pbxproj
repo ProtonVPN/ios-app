@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -481,6 +481,7 @@
 		E1FB5483230C2DD000153F4D /* ColorPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FB5480230C2DD000153F4D /* ColorPickerTableViewCell.xib */; };
 		E1FB5484230C2DD000153F4D /* ColorPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E1FB5480230C2DD000153F4D /* ColorPickerTableViewCell.xib */; };
 		E5A03540860EA9AA187B8EFC /* Pods-ProtonVPN-settings-metadata.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB58D1A671E132A3AC40A112 /* Pods-ProtonVPN-settings-metadata.plist */; };
+		E9F8B5DE261EF51F00B72549 /* openssl.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = E9F8B5DD261EF51F00B72549 /* openssl.xcframework */; };
 		F3607BEE25D582BF0076AE32 /* ConfirmationToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3607BED25D582BF0076AE32 /* ConfirmationToggleSwitch.swift */; };
 		F3607C0A25D67B1F0076AE32 /* ConfirmationToggleSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3607BED25D582BF0076AE32 /* ConfirmationToggleSwitch.swift */; };
 		F3BBB87A25DD56A300E700B5 /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3BBB87925DD56A300E700B5 /* Challenge.swift */; };
@@ -912,6 +913,7 @@
 		E1FB547A230C000E00153F4D /* TitleTextFieldTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTextFieldTableViewCell.xib; sourceTree = "<group>"; };
 		E1FB547F230C2DD000153F4D /* ColorPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerTableViewCell.swift; sourceTree = "<group>"; };
 		E1FB5480230C2DD000153F4D /* ColorPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ColorPickerTableViewCell.xib; sourceTree = "<group>"; };
+		E9F8B5DD261EF51F00B72549 /* openssl.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = openssl.xcframework; path = "../Pods/OpenSSL-Apple/frameworks/openssl.xcframework"; sourceTree = "<group>"; };
 		ED741DA236AF3C7A3709C6E8 /* Pods_Siri_Shortuct_Handler_Debug.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Siri_Shortuct_Handler_Debug.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3607BED25D582BF0076AE32 /* ConfirmationToggleSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationToggleSwitch.swift; sourceTree = "<group>"; };
 		F378E296FEC07B9B460E3AE8 /* Pods-ProtonVPN.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ProtonVPN.release.xcconfig"; path = "Pods/Target Support Files/Pods-ProtonVPN/Pods-ProtonVPN.release.xcconfig"; sourceTree = "<group>"; };
@@ -926,6 +928,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9F8B5DE261EF51F00B72549 /* openssl.xcframework in Frameworks */,
 				E198D6B12163B31A00F2F0E0 /* libc++.tbd in Frameworks */,
 				E18006E7218B0B7B009E01E3 /* StoreKit.framework in Frameworks */,
 				E148AE5321C1683D007AB65A /* NetworkExtension.framework in Frameworks */,
@@ -1319,6 +1322,7 @@
 		7995FCFF2090A66F0030E1EB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E9F8B5DD261EF51F00B72549 /* openssl.xcframework */,
 				D5136C1522858E340002C095 /* vpncore.framework */,
 				E1C06EBA21F23BF500425BC6 /* Srp.framework */,
 				E148AE5221C1683D007AB65A /* NetworkExtension.framework */,
