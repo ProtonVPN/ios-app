@@ -80,7 +80,7 @@ class SignUpTests: ProtonVPNUITests {
         XCTAssert(button.isEnabled)
         button.tap()
         expectation(for: NSPredicate(format: "exists == false"), evaluatedWith: app.staticTexts["wrongEmail"], handler: nil)
-        expectation(for: NSPredicate(format: "exists == true"), evaluatedWith: app.staticTexts["passwordsDontMatch"], handler: nil)
+        expectation(for: NSPredicate(format: "exists == true"), evaluatedWith: app.staticTexts["passwordTooShort"], handler: nil)
         waitForExpectations(timeout: 2, handler: nil)
         
     }

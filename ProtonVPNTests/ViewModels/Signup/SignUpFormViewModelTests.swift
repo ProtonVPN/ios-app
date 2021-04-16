@@ -75,15 +75,16 @@ class SignUpFormViewModelTests: XCTestCase {
     }
     
     func testValidatesPasswordFields() {
-        viewModel.password1 = "abc"
-        XCTAssertEqual(FormValidationError.passwordsDontMatch, viewModel.validatePassword1())
+        viewModel.password1 = "123"
+        XCTAssertEqual(FormValidationError.passwordTooShort, viewModel.validatePassword1())
         XCTAssertEqual(FormValidationError.emptyValue, viewModel.validatePassword2())
         
-        viewModel.password2 = "abcabc"
-        XCTAssertEqual(FormValidationError.passwordsDontMatch, viewModel.validatePassword1())
+        viewModel.password2 = "abcabcabd"
+        XCTAssertEqual(FormValidationError.passwordTooShort, viewModel.validatePassword1())
         XCTAssertEqual(FormValidationError.passwordsDontMatch, viewModel.validatePassword2())
         
-        viewModel.password2 = "abc"
+        viewModel.password1 = "12345678"
+        viewModel.password2 = "12345678"
         XCTAssertNil(viewModel.validatePassword1())
         XCTAssertNil(viewModel.validatePassword2())
     }

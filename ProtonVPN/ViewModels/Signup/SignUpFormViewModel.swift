@@ -157,8 +157,16 @@ final class SignUpFormViewModelImplementation: SignUpFormViewModel {
     }
     
     func validatePassword1() -> FormValidationError? {
-        guard !password1.isEmpty else { return FormValidationError.emptyValue }
-        return password1.elementsEqual(password2) ? nil : FormValidationError.passwordsDontMatch
+        
+        guard let password1 = password1, !password1.isEmpty else {
+            return FormValidationError.emptyValue
+        }
+        
+        guard password1.count >= 8 else {
+            return FormValidationError.passwordTooShort
+        }
+
+        return password1.elementsEqual(password2 ?? "") ? nil : FormValidationError.passwordsDontMatch
     }
     
     func validatePassword2() -> FormValidationError? {
